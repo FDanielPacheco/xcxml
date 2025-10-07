@@ -102,6 +102,16 @@ main( void ){
 }
 ```
 
+### Included example
+
+```bash
+make example
+
+cd test
+./../build/read_example
+```
+
+
 ## Documentation
 
 API documentation generation (from xcxml directory):

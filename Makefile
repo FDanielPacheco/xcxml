@@ -30,7 +30,7 @@ DOCS_DIR = docs
 
 # Test 
 TEST_DIR = test
-TESTS = read
+TESTS = read_example
 TEST_BINS = $(addprefix $(BUILD_DIR)/, $(TESTS))
 
 # --- Target 1: xcxml ---
@@ -162,8 +162,11 @@ clean:
 cleanrelease:
 	@echo "Cleaning the release directory..."
 	@rm -rf release
-	
-$(TESTS): %: single_a $(BUILD_DIR)/%
+
+example: single_a
+	$(MAKE) $(TESTS)
+
+$(TESTS): %: $(BUILD_DIR)/%
 
 $(BUILD_DIR)/%: $(TEST_DIR)/%.c | $(BUILD_DIR)
 	@echo "Compiling $< to test binary $@..."
