@@ -1,0 +1,9 @@
+<root_tag>
+    <first_lvl>
+        <second_lvl>
+            <value>10</value>
+        </second_lvl>
+    </first_lvl>
+
+    <outside_value>"Here is another value"</outside_value>
+</root_tag>
