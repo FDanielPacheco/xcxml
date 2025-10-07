@@ -155,7 +155,7 @@ clean:
 	@echo "Cleaning build and documentation directories..."
 	@rm -rf $(DOCS_DIR)/html
 	@rm -rf $(DOCS_DIR)/man
-	@rm $(DOCS_DIR)/Doxyfile.tmp
+	@rm -rf $(DOCS_DIR)/Doxyfile.tmp
 	@rm -rf $(BUILD_DIR)
 	@echo "Clean complete."
 
